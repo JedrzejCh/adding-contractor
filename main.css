@@ -107,7 +107,8 @@ html {
   cursor: pointer;
   overflow: hidden;
   position: relative;
-
+  transition: .3s all;
+  border: 2px solid transparent;
 }
 
 .attachment-label {
@@ -143,7 +144,9 @@ html {
   color: #fff;
 
 }
-
+.btn:hover{
+ border: 2px solid #536b78;
+}
 
 .pesel,
 .nip {

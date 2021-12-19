@@ -1,0 +1,145 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body{
+  background-color: #cee5f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+ 
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+
+.form-wrapper{
+  background-color: #fff;
+  border-radius: 1rem;
+  max-width: 70rem;
+  min-height: 65rem;
+  box-shadow: 8px 8px 24px -19px #637081;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form-heading{
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: #536b78;
+  margin-bottom: 2rem;
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.input-field input {
+border-radius: 5px;
+border: 1px solid #7C98B3;
+font-size: 1.2rem;
+padding: 0.5rem 1rem;
+font-weight: 300;
+color:#7C98B3 ;
+}
+
+.input-field label {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #637081;
+}
+.id-heading{
+  font-size: 1.3rem;
+  font-weight: 500;
+ color: #637081;
+}
+.radio-fields{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.bottom-wrapper{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 5rem;
+}
+.btn{
+  padding: 1rem 4.5rem;
+  background-color: #7C98B3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.attachment-label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.attachment-label svg{
+  width: 40px;
+  height: 30px;
+}
+.file-input{
+  display: none;
+}
+.file-mime{
+  font-size: 1rem;
+  color: #637081;
+  margin: 0 0 1rem 0;
+}
+.attachment-item{
+  width: 13rem;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.btn span{
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+
+.pesel,
+.nip {
+  display: none;
+}
+
+.pesel.active,
+.nip.active {
+  display: block;
+}
+
+.errorBox{
+  display: none;
+}
+
+.errorBox.active {
+  display: block;
+}
+
+.error{
+  color: red;
+}
+.error-text{
+  position: absolute;
+  bottom: -3rem;
+}
